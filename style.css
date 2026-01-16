@@ -20,6 +20,8 @@
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
+  color: #0019c9;
+  text-decoration: none;
 }
 
 /* Header */
@@ -44,12 +46,15 @@
 
 /* Main Area */
 .main {
-  background-color: #eef1f4;
+  background-color: #ebf5ff;
   min-height: calc(100vh - 160px);
+  padding-top: 80px;
+}
+
+.horizontal {
   display: flex;
   justify-content: center;
   gap: 80px;
-  padding-top: 80px;
 }
 
 /* Buttons */
@@ -125,3 +130,25 @@
   outline: 3px solid #0019c9;
   outline-offset: 4px;
 }
+
+
+/* Image */
+.big-image {
+  width: 500px;
+  padding-bottom: 50px;
+  gap: 20px;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+ 
