@@ -93,3 +93,32 @@ font-family: 'Times New Roman', Times, serif;
     height: 286px;
     object-fit: cover;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-family: "Times New Roman", serif;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Header row */
+th {
+    background-color: #000146;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Data rows */
+td {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 18px;
+}
