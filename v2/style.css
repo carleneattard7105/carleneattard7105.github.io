@@ -75,17 +75,18 @@ body {
 .text h1 {
     width: 346px;
     height: 84px;
-
+font-family: 'Times New Roman', Times, serif;
     font-size: 48px;
     color: #000000;
+    margin-bottom: 25px;
 }
 .text p {
     width: 761px;
     height: 329px;
-
+font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #000000;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 .right-image img {
     width: 429px;
