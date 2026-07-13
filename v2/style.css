@@ -94,31 +94,211 @@ font-family: 'Times New Roman', Times, serif;
     object-fit: cover;
 }
 
-table {
+.opening-table {
     width: 100%;
     border-collapse: collapse;
     margin: 30px 0;
-    font-family: "Times New Roman", serif;
 }
 
-th,
-td {
-    border: 1px solid #000000;
-    padding: 12px;
+.opening-table th,
+.opening-table td {
+    border: 1px solid #000;
+    padding: 15px;
     text-align: center;
 }
 
-/* Header row */
-th {
+.opening-table th {
     background-color: #000146;
-    color: #FFFFFF;
-    font-size: 22px;
-    font-weight: bold;
+    color: white;
 }
 
-/* Data rows */
-td {
-    background-color: #FFFFFF;
+.opening-table td {
+    background-color: white;
+    color: black;
+}
+h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 48px;
+    margin: 30px 0 20px;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: "Times New Roman", serif;
     color: #000000;
-    font-size: 18px;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.toolbar {
+    background-color: #000146;
+    width: 100%;
+    height: 103px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 79px;
+}
+
+.toolbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.toolbar a:hover {
+    text-decoration: underline;
+}
+
+.toolbar i {
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 296px;
+    height: 103px;
+    object-fit: contain;
+}
+
+/* =========================
+   HERO BANNER
+========================= */
+
+.hero {
+    width: 100%;
+    height: 263px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 40px auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 38px;
+    margin: 40px 0 20px;
+}
+
+p {
+    font-size: 22px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   IMAGE BESIDE TEXT
+========================= */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.content-text {
+    flex: 2;
+}
+
+.content-image {
+    flex: 1;
+}
+
+.content-image img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.opening-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.opening-table th,
+.opening-table td {
+    border: 1px solid #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+.opening-table th {
+    background-color: #000146;
+    color: white;
+    font-size: 22px;
+}
+
+.opening-table td {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #000146;
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+footer i {
+    color: white;
+    font-size: 28px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+footer i:hover {
+    opacity: 0.8;
 }
