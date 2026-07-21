@@ -256,14 +256,14 @@ p {
 .opening-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .opening-table th,
 .opening-table td {
     border: 1px solid #000000;
-    padding: 15px;
-    text-align: center;
+    padding: 5px;
+    text-align: left;
 }
 
 .opening-table th {
@@ -301,4 +301,109 @@ footer i {
 
 footer i:hover {
     opacity: 0.8;
+}
+
+
+form {
+    width: 600px;
+    margin: 40px 0;
+}
+
+label {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+
+    border: 1px solid #000;
+}
+
+input[type="submit"] {
+    width: 180px;
+    background-color: #000146;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a1a80;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-section {
+    width: 90%;
+    max-width: 1280px;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h1 {
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 25px;
+
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+
+    border: 1px solid black;
+}
+
+.contact-form textarea {
+    height: 180px;
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    width: 200px;
+    background: #000146;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #1d1d7a;
+}
+
+/* =========================
+   CONTACT IMAGE
+========================= */
+
+.contact-image img {
+    width: 120%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
 }
