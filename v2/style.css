@@ -440,7 +440,7 @@ input[type="submit"]:hover {
 .content {
     width: 90%;
     max-width: 1340px;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 .text {
@@ -452,29 +452,35 @@ input[type="submit"]:hover {
     font-size: 48px;
     color: #000;
     line-height: 40px;
-    margin-top:5px;
-    margin-bottom: 40px;
+    margin-top:0.5px;
+    margin-bottom: 5%;
+    width: 100%;
+    max-width: none;
 }
 
 .text p {
     font-family: "Times New Roman", serif;
     font-size: 24px;
-    line-height: 60px;
+    line-height: 30px;
+    margin:0;
     color: #000;
-    margin-top: 30px;
-    margin-bottom: 0.5px;
     text-align: justify;
+    margin: 1px 0 0.5px 0;
 }
 
 .text h3 {
     font-family: "Times New Roman", serif;
     font-size: 32px;
     color: #000146;
-    margin-top:5px;
+    margin-top:0.5px;
     margin-bottom: 10px;
+     margin: 1px 0 10px 0;
 }
 
 .text ul {
+    margin-top:0;
+    margin-bottom: 10px;
+    padding-left: 20px;
     margin-left: 20px;
 }
 
@@ -483,4 +489,38 @@ input[type="submit"]:hover {
     font-size: 22px;
     line-height: 1.0px;
     margin-bottom: 40px;
+}
+
+/* =========================
+   FRESHERS WEEK
+========================= */
+
+.freshers-section {
+    width: 90%;
+    max-width: 1280px;
+    margin: 20px auto;
+}
+
+.freshers-section h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 48px;
+    color: #000;
+    margin:0 0 5px 0;
+}
+
+.freshers-section h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 32px;
+    color: #000146;
+    margin: 0 0 5px 0;
+}
+
+.freshers-section ul{
+    margin: 0;
+    padding-left: 25px;
+}
+
+.freshers-section li{
+    font-size: 20px;
+    margin-bottom: 5px;
 }
