@@ -524,3 +524,139 @@ input[type="submit"]:hover {
     font-size: 20px;
     margin-bottom: 5px;
 }
+
+
+
+
+/* =========================
+   CANTEEN REVIEWS
+========================= */
+
+.canteen-section {
+    width: 80%;
+    max-width: 1280px;
+    margin: 40px auto;
+}
+
+.canteen-section h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 48px;
+    margin: 0 0 25px 0;
+}
+
+/* Text + image */
+.canteen-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* Left side */
+.canteen-text {
+    flex: 1;
+}
+
+.canteen-text p {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.canteen-text h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 28px;
+    color: #000146;
+    margin: 10px 0;
+}
+
+.canteen-text ul {
+    padding-left: 25px;
+    margin: 0;
+}
+
+.canteen-text li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Right side */
+.articles-image {
+    width: 440px;
+    flex-shrink: 0;
+}
+
+.articles-image img {
+    width: 440px;
+    height: 286px;
+    object-fit: cover;
+    display: block;
+}
+
+.articles-image figcaption {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: #000;
+    margin-top: 6px;
+    text-align: center;
+}
+
+/* Two Freshers images */
+.freshers-images {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.freshers-images figure {
+    width: 210px;
+    margin: 0;
+}
+
+.freshers-images img {
+    width: 210px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.freshers-images figcaption {
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+/* =========================
+   FRESHERS IMAGES
+========================= */
+
+.freshers-images {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;                 /* Space between the two images */
+    align-items: flex-start;
+    width: 100%;
+}
+
+.freshers-images .articles-image {
+    flex: 1;
+    margin: 0;
+    min-width: 0;
+}
+
+.freshers-images .articles-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.freshers-images .articles-image figcaption {
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+}
