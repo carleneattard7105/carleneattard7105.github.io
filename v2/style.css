@@ -73,20 +73,49 @@ body {
     padding: 40px;
 }
 .text h1 {
-    width: 346px;
-    height: 84px;
 font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
-    color: #000000;
-    margin-bottom: 25px;
+    font-size: 46px;
+    margin:0 0 18px;
+    color: #000146;
 }
+
+.welcome-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #000146;
+    color: #ffffff;
+}
+
+.secondary-btn {
+    border: 2px solid #000146;
+    color: #000146;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-2px);
+}
+
 .text p {
-    width: 761px;
-    height: 329px;
+max-width: 700px;
 font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #000000;
-    line-height: 1.8;
+    line-height: 1.6;
+    margin: 0;
 }
 .right-image img {
     width: 429px;
@@ -141,6 +170,10 @@ body {
     color: #000000;
     background-color: #FFFFFF;
     line-height: 1.6;
+
+        min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* =========================
@@ -198,55 +231,130 @@ body {
 }
 
 /* =========================
-   MAIN CONTENT
-========================= */
-
-.container {
-    width: 90%;
-    max-width: 1280px;
-    margin: 40px auto;
-}
-
-h1 {
-    font-size: 48px;
-    margin-bottom: 25px;
-}
-
-h2 {
-    font-size: 38px;
-    margin: 40px 0 20px;
-}
-
-p {
-    font-size: 22px;
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-/* =========================
-   IMAGE BESIDE TEXT
+MAIN PAGE LAYOUT
 ========================= */
 
 .content {
+    display: block !important;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+WELCOME SECTION
+========================= */
+
+.welcome-section {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    margin-bottom: 70px;
 }
 
-.content-text {
-    flex: 2;
+.text {
+    flex: 1;
+    width: auto;
 }
 
-.content-image {
+.text h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+.text p {
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* MAIN CAMPUS IMAGE */
+
+.right-image {
+    flex: 0 0 400px;
+}
+
+.right-image img {
+    width: 600px;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.right-image p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+REASONS SECTION
+========================= */
+
+.reasons-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.reasons-text {
     flex: 1;
 }
 
-.content-image img {
-    width: 100%;
-    max-width: 430px;
-    height: auto;
+.reasons-text h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.reasons-text ul {
+    padding-left: 30px;
+    margin: 0 0 30px 0;
+}
+
+.reasons-text li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+
+/* INTERNS IMAGE */
+
+.bottom-image {
+    flex: 0 0 400px;
+}
+
+.bottom-image img {
+    width: 600px%;
+    height: 600px;
+    object-fit: cover;
     display: block;
+    border-radius: 10px;
+}
+
+.bottom-image p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
 }
 
 /* =========================
@@ -526,8 +634,6 @@ input[type="submit"]:hover {
 }
 
 
-
-
 /* =========================
    CANTEEN REVIEWS
 ========================= */
@@ -535,13 +641,13 @@ input[type="submit"]:hover {
 .canteen-section {
     width: 80%;
     max-width: 1280px;
-    margin: 40px auto;
+    margin: 1px auto;
 }
 
 .canteen-section h1 {
     font-family: "Times New Roman", serif;
     font-size: 48px;
-    margin: 0 0 25px 0;
+    margin: 0 0 5px 0;
 }
 
 /* Text + image */
@@ -662,39 +768,98 @@ input[type="submit"]:hover {
 }
 
 /* =========================
-   FOOTER / BOTTOM TOOLBAR
+   BOTTOM TOOLBAR
 ========================= */
 
 .bottom-toolbar {
     width: 100%;
-    height: 44px;
+    min-height: 52px;
     background-color: #000146;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    padding-left: 20px;
-    gap: 15px;
-    padding-bottom: 20px;  /* small gap */
-
-
-    /* Pushes footer to bottom */
+    padding: 0 25px;
     margin-top: auto;
+    flex-wrap: nowrap;
 }
 
-/* Footer links */
-.bottom-toolbar a {
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.footer-socials a {
     color: #FFFFFF;
     text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Font Awesome icons */
-.bottom-toolbar i {
-    font-size: 24px;
+.footer-socials i {
     color: #FFFFFF;
+    font-size: 22px;
 }
 
-/* Hover effect */
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    white-space: nowrap;
+}
+
+.footer-contact a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-contact i {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-copyright {
+    color: #FFFFFF;
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* =========================
+   HOVER
+========================= */
+
 .bottom-toolbar a:hover {
     opacity: 0.8;
 }
